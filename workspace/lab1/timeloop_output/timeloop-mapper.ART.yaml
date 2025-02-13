@@ -10,12 +10,12 @@ ART:
       - name: system_arch_top_level.global_buffer[1..1]
         area: 13502.9
       - name: system_arch_top_level.scratchpad[1..1]
-        area: 292.555
+        area: 202.855
       - name: system_arch_top_level.weight_reg[1..1]
-        area: 5.98
+        area: 95.68
       - name: system_arch_top_level.input_reg[1..1]
-        area: 5.98
+        area: 95.68
       - name: system_arch_top_level.output_reg[1..1]
-        area: 5.98
+        area: 95.68
       - name: system_arch_top_level.compute[1..1]
         area: 1726.5

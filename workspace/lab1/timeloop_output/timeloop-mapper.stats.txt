@@ -36,17 +36,13 @@ Level 1
         Multiple buffering              : 1.00
         Effective size                  : 1
         Min utilization                 : 0.00
-        Vector access energy            : 0.01 pJ
+        Vector access energy            : 0.14 pJ
         Vector access energy source     : ERT
         Per-instance-cycle leakage      : 0.00 pJ
         Instances sharing power gating  : 1.00
         Non-power-gated utilization     : 100.00%
-        Leakage energy (total)          : 0.04 pJ
-        Area                            : 5.98 um^2
-
-    MAPPING
-    -------
-    Loop nest:
+        Leakage energy (total)          : 0.57 pJ
+        Area                            : 95.68 um^2
 
     STATS
     -----
@@ -62,9 +58,9 @@ Level 1
         Scalar updates (per-instance)            : 512
         Temporal reductions (per-instance)       : 504
         Address generations (per-cluster)        : 1016
-        Energy (per-scalar-access)               : 0.01 pJ
-        Energy (per-instance)                    : 13.68 pJ
-        Energy (total)                           : 13.68 pJ
+        Energy (per-scalar-access)               : 0.14 pJ
+        Energy (per-instance)                    : 218.88 pJ
+        Energy (total)                           : 218.88 pJ
         Temporal Reduction Energy (per-instance) : 0.00 pJ
         Temporal Reduction Energy (total)        : 0.00 pJ
         Address Generation Energy (per-cluster)  : 0.00 pJ
@@ -95,17 +91,13 @@ Level 2
         Multiple buffering              : 1.00
         Effective size                  : 1
         Min utilization                 : 0.00
-        Vector access energy            : 0.01 pJ
+        Vector access energy            : 0.14 pJ
         Vector access energy source     : ERT
         Per-instance-cycle leakage      : 0.00 pJ
         Instances sharing power gating  : 1.00
         Non-power-gated utilization     : 100.00%
-        Leakage energy (total)          : 0.04 pJ
-        Area                            : 5.98 um^2
-
-    MAPPING
-    -------
-    Loop nest:
+        Leakage energy (total)          : 0.57 pJ
+        Area                            : 95.68 um^2
 
     STATS
     -----
@@ -121,9 +113,9 @@ Level 2
         Scalar updates (per-instance)            : 0
         Temporal reductions (per-instance)       : 0
         Address generations (per-cluster)        : 576
-        Energy (per-scalar-access)               : 0.01 pJ
-        Energy (per-instance)                    : 5.18 pJ
-        Energy (total)                           : 5.18 pJ
+        Energy (per-scalar-access)               : 0.14 pJ
+        Energy (per-instance)                    : 82.94 pJ
+        Energy (total)                           : 82.94 pJ
         Temporal Reduction Energy (per-instance) : 0.00 pJ
         Temporal Reduction Energy (total)        : 0.00 pJ
         Address Generation Energy (per-cluster)  : 0.00 pJ
@@ -154,17 +146,13 @@ Level 3
         Multiple buffering              : 1.00
         Effective size                  : 1
         Min utilization                 : 0.00
-        Vector access energy            : 0.01 pJ
+        Vector access energy            : 0.14 pJ
         Vector access energy source     : ERT
         Per-instance-cycle leakage      : 0.00 pJ
         Instances sharing power gating  : 1.00
         Non-power-gated utilization     : 100.00%
-        Leakage energy (total)          : 0.04 pJ
-        Area                            : 5.98 um^2
-
-    MAPPING
-    -------
-    Loop nest:
+        Leakage energy (total)          : 0.57 pJ
+        Area                            : 95.68 um^2
 
     STATS
     -----
@@ -180,9 +168,9 @@ Level 3
         Scalar updates (per-instance)            : 0
         Temporal reductions (per-instance)       : 0
         Address generations (per-cluster)        : 1024
-        Energy (per-scalar-access)               : 0.01 pJ
-        Energy (per-instance)                    : 9.22 pJ
-        Energy (total)                           : 9.22 pJ
+        Energy (per-scalar-access)               : 0.14 pJ
+        Energy (per-instance)                    : 147.46 pJ
+        Energy (total)                           : 147.46 pJ
         Temporal Reduction Energy (per-instance) : 0.00 pJ
         Temporal Reduction Energy (total)        : 0.00 pJ
         Address Generation Energy (per-cluster)  : 0.00 pJ
@@ -213,17 +201,13 @@ Level 4
         Multiple buffering              : 1.00
         Effective size                  : 18
         Min utilization                 : 0.00
-        Vector access energy            : 0.23 pJ
+        Vector access energy            : 0.09 pJ
         Vector access energy source     : ERT
         Per-instance-cycle leakage      : 0.00 pJ
         Instances sharing power gating  : 1.00
         Non-power-gated utilization     : 100.00%
-        Leakage energy (total)          : 0.61 pJ
-        Area                            : 292.55 um^2
-
-    MAPPING
-    -------
-    Loop nest:
+        Leakage energy (total)          : 0.07 pJ
+        Area                            : 202.85 um^2
 
     STATS
     -----
@@ -239,9 +223,9 @@ Level 4
         Scalar updates (per-instance)            : 0
         Temporal reductions (per-instance)       : 0
         Address generations (per-cluster)        : 1024
-        Energy (per-scalar-access)               : 0.23 pJ
-        Energy (per-instance)                    : 232.33 pJ
-        Energy (total)                           : 232.33 pJ
+        Energy (per-scalar-access)               : 0.09 pJ
+        Energy (per-instance)                    : 94.09 pJ
+        Energy (total)                           : 94.09 pJ
         Temporal Reduction Energy (per-instance) : 0.00 pJ
         Temporal Reduction Energy (total)        : 0.00 pJ
         Address Generation Energy (per-cluster)  : 0.00 pJ
@@ -263,9 +247,9 @@ Level 4
         Scalar updates (per-instance)            : 0
         Temporal reductions (per-instance)       : 0
         Address generations (per-cluster)        : 128
-        Energy (per-scalar-access)               : 0.23 pJ
-        Energy (per-instance)                    : 29.04 pJ
-        Energy (total)                           : 29.04 pJ
+        Energy (per-scalar-access)               : 0.09 pJ
+        Energy (per-instance)                    : 11.76 pJ
+        Energy (total)                           : 11.76 pJ
         Temporal Reduction Energy (per-instance) : 0.00 pJ
         Temporal Reduction Energy (total)        : 0.00 pJ
         Address Generation Energy (per-cluster)  : 0.00 pJ
@@ -287,9 +271,9 @@ Level 4
         Scalar updates (per-instance)            : 512
         Temporal reductions (per-instance)       : 504
         Address generations (per-cluster)        : 1016
-        Energy (per-scalar-access)               : 0.23 pJ
-        Energy (per-instance)                    : 344.86 pJ
-        Energy (total)                           : 344.86 pJ
+        Energy (per-scalar-access)               : 0.09 pJ
+        Energy (per-instance)                    : 139.66 pJ
+        Energy (total)                           : 139.66 pJ
         Temporal Reduction Energy (per-instance) : 0.00 pJ
         Temporal Reduction Energy (total)        : 0.00 pJ
         Address Generation Energy (per-cluster)  : 0.00 pJ
@@ -327,11 +311,6 @@ Level 5
         Non-power-gated utilization     : 100.00%
         Leakage energy (total)          : 0.07 pJ
         Area                            : 13502.90 um^2
-
-    MAPPING
-    -------
-    Loop nest:
-      for M in [0:8)
 
     STATS
     -----
@@ -436,11 +415,6 @@ Level 6
         Leakage energy (total)          : 0.00 pJ
         Area                            : 0.00 um^2
 
-    MAPPING
-    -------
-    Loop nest:
-      for C in [0:64)
-
     STATS
     -----
     Cycles               : 512
@@ -496,10 +470,6 @@ Level 7
         Leakage energy (total)          : 0.00 pJ
         Area                            : 0.00 um^2
 
-    MAPPING
-    -------
-    Loop nest:
-
     STATS
     -----
     Cycles               : 512
@@ -554,10 +524,6 @@ Level 8
         Non-power-gated utilization     : 100.00%
         Leakage energy (total)          : 0.00 pJ
         Area                            : 0.00 um^2
-
-    MAPPING
-    -------
-    Loop nest:
 
     STATS
     -----
@@ -631,19 +597,19 @@ GFLOPs (@1GHz): 1.98
 Utilization: 100.00%
 Cycles: 512
 Energy: 0.08 uJ
-EDP(J*cycle): 4.08e-05
+EDP(J*cycle): 4.09e-05
 Area: 0.00 mm^2
 
 Computes = 512
 fJ/Compute
     compute                        = 3275.00
-    output_reg                     = 26.79
-    input_reg                      = 10.19
-    weight_reg                     = 18.07
-    scratchpad                     = 1185.24
+    output_reg                     = 428.62
+    input_reg                      = 163.12
+    weight_reg                     = 289.12
+    scratchpad                     = 479.66
     global_buffer                  = 5213.93
     weight_DRAM                    = 128000.00
     output_DRAM                    = 2000.00
     input_DRAM                     = 16000.00
-    Total                          = 155729.22
+    Total                          = 155849.45
 

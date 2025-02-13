@@ -2,3 +2,168 @@
   What is your Banner ID?: B01717637
   What is your email address?: melvin_he@brown.edu
   What is your name?: Melvin He
+'1.1':
+  ? "\n    The training accuracy is always a good indicator of the model performance
+    on\n    unseen data.\n    "
+  : 'False'
+  ? "\n    The white-with-black-background images are from the _____ distribution\n\
+    \    compared to your training and testing data.\n    "
+  : Different
+  ? "\n    Which accuracy is the better indicator of the model performance on unseen\n\
+    \    data?\n    "
+  : Test Accuracy
+  ? "\n    You have trained and tested the model on images give with white digits
+    on a\n    black background. However, you now want to use the model to classify
+    images\n    with black digits on a white background. How would you expect the
+    model's\n    accuracy to change?\n    "
+  : Accuracy Decrease
+'1.2':
+  What do the conv1 filters look like? Are there (or are there not) any discernable patterns?: The
+    conv1 filters do not show clear discernable patterns. This might be due to the
+    simplicity of the MNIST dataset, the limited number of filters, or the filters
+    not significantly updating during training. Despite this, the model performs well,
+    indicating that the filters are effective for this specific task.
+  What is the test accuracy of the model?: 98.13
+  What is the training accuracy of the model?: 98.576
+  What is the validation accuracy of the model?: 97.56
+  What number is shown in the first (index 0) image?: 7
+'2.1':
+  What is your implementation of the conv function?: "def conv(x, W, b):\n    # DO
+    NOT USE ANY LIBRARY CONVOLUTION FUNCTIONS. WRITE YOUR OWN LOOP NEST.\n    if np.ndim(x)
+    == 2:\n        x = np.expand_dims(x, axis = 0)\n    assert np.ndim(x) == 3\n \
+    \   C_in, M, N = x.shape\n    C_out, C_t, Kx, Ky = W.shape\n    assert C_in ==
+    C_t, \"activation and weight dimension mismatch!\"\n    # Assume this padding\n\
+    \    x_padded = np.pad(x,((0,0),(Kx//2,Kx//2),(Ky//2,Ky//2)))\n\n    # Your code
+    here\n    out = np.zeros((C_out, M, N))\n    for c in range(C_out):\n        for
+    i in range(M):\n            for j in range(N):\n                out[c, i, j] =
+    np.sum(x_padded[:, i:i+Kx, j:j+Ky] * W[c, :, :, :]) + b[c]\n    return out\n"
+  What is your implementation of the fc function?: "def fc(x, W, b):\n    # DO NOT
+    USE ANY LIBRARY MATRIX MULTIPLICATION FUNCTIONS. WRITE YOUR OWN LOOP NEST.\n \
+    \   # Your code here\n    assert x.shape[0] == W.shape[1], \"Input and weight
+    dimension mismatch!\"\n    out = np.zeros(W.shape[0])\n    for i in range(W.shape[0]):\n\
+    \        sum_val = 0\n        for j in range(W.shape[1]):\n            sum_val
+    += x[j] * W[i, j]\n        out[i] = sum_val + b[i]\n    return out\n"
+  What is your implementation of the flatten function?: "def flatten(x):\n    # Your
+    code here\n    return x.flatten()\n"
+  What is your implementation of the pool2 function?: "def pool2(x, dh, dw):\n   \
+    \ # DO NOT USE ANY LIBRARY POOLING FUNCTIONS. WRITE YOUR OWN LOOP NEST.\n    #
+    Your code here\n    C, H, W = x.shape\n    H_out = H // dh\n    W_out = W // dw\n\
+    \    out = np.zeros((C, H_out, W_out))\n    for c in range(C):\n        for i
+    in range(H_out):\n            for j in range(W_out):\n                out[c, i,
+    j] = np.max(x[c, i*dh:(i+1)*dh, j*dw:(j+1)*dw])\n    return out\n"
+  What is your implementation of the relu function?: "def relu(x):\n    # Your code
+    here\n    return np.maximum(0, x)\n"
+'2.2':
+  What is the accuracy of your implementation?: 974
+'2.3':
+  What are the parameters of layer 1?:
+  - 5
+  - 5
+  - 1
+  - 4
+  What are the parameters of layer 2?: []
+  What are the parameters of layer 3?:
+  - 2
+  - 2
+  - 2
+  - 2
+  What are the parameters of layer 4?:
+  - 5
+  - 5
+  - 4
+  - 8
+  What are the parameters of layer 5?: []
+  What are the parameters of layer 6?:
+  - 2
+  - 2
+  - 2
+  - 2
+  What are the parameters of layer 7?:
+  - 256
+  - 392
+  What are the parameters of layer 8?: []
+  What are the parameters of layer 9?:
+  - 10
+  - 256
+  What is the layer type of layer 1?: conv
+  What is the layer type of layer 2?: relu
+  What is the layer type of layer 3?: pool
+  What is the layer type of layer 4?: conv
+  What is the layer type of layer 5?: relu
+  What is the layer type of layer 6?: pool
+  What is the layer type of layer 7?: fc
+  What is the layer type of layer 8?: relu
+  What is the layer type of layer 9?: fc
+  What is the size of the input to the network?:
+  - 1
+  - 1
+  - 28
+  - 28
+'2.4':
+  What is the output size of layer 1?:
+  - 1
+  - 1
+  - 28
+  - 4
+  What is the output size of layer 2?:
+  - 1
+  - 1
+  - 28
+  - 4
+  What is the output size of layer 3?:
+  - 1
+  - 0
+  - 14
+  - 4
+  What is the output size of layer 4?:
+  - 1
+  - 0
+  - 14
+  - 8
+  What is the output size of layer 5?:
+  - 1
+  - 0
+  - 14
+  - 8
+  What is the output size of layer 6?:
+  - 1
+  - 0
+  - 7
+  - 8
+  What is the output size of layer 7?:
+  - 1
+  - 1
+  - 1
+  - 256
+  What is the output size of layer 8?:
+  - 1
+  - 1
+  - 1
+  - 256
+  What is the output size of layer 9?:
+  - 1
+  - 1
+  - 1
+  - 10
+'3.1':
+  As tensor sizes increase, compute intensity tends to ____.: increase
+  Most of the energy goes to ____.: compute
+'3.2':
+  As tensor sizes increase, compute energy tends to ____.: increase
+  As tensor sizes increase, data movement energy tends to ____.: increase
+'3.3':
+  As tensor sizes increase, compute energy per compute tends to ____.: stay the same
+  As tensor sizes increase, data movement energy per compute tends to ____.: decrease
+'3.4':
+  Increasing compute intensity correlates with lower per-compute data movement energy due to increasing ____.: data
+    reuse
+  ? Relative to convolution layers, fully-connected layers tend to have a ____ compute
+    intensity for the same number of weights.
+  : lower
+'3.5':
+  ? 'For convolutional layers with batch size one, ____ tend to be larger. (hint:
+    try some of the layer shapes from the previous notebooks.)'
+  : inputs+outputs
+  ? 'For fully-connected layers with batch size one, ____ tend to be larger. (hint:
+    try some of the layer shapes from the previous notebooks.)'
+  : weights
