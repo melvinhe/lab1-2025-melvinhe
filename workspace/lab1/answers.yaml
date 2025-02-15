@@ -78,10 +78,10 @@
   - 2
   - 2
   - 2
-  What are the parameters of layer 7?:
+  What are the parameters of layer 7?: []
+  What are the parameters of layer 8?:
   - 256
   - 392
-  What are the parameters of layer 8?: []
   What are the parameters of layer 9?:
   - 10
   - 256
@@ -91,8 +91,8 @@
   What is the layer type of layer 4?: conv
   What is the layer type of layer 5?: relu
   What is the layer type of layer 6?: pool
-  What is the layer type of layer 7?: fc
-  What is the layer type of layer 8?: relu
+  What is the layer type of layer 7?: relu
+  What is the layer type of layer 8?: fc
   What is the layer type of layer 9?: fc
   What is the size of the input to the network?:
   - 1
@@ -102,49 +102,79 @@
 '2.4':
   What is the output size of layer 1?:
   - 1
-  - 1
-  - 28
   - 4
+  - 28
+  - 28
   What is the output size of layer 2?:
   - 1
-  - 1
-  - 28
   - 4
+  - 28
+  - 28
   What is the output size of layer 3?:
   - 1
-  - 0
-  - 14
   - 4
+  - 14
+  - 14
   What is the output size of layer 4?:
   - 1
-  - 0
-  - 14
   - 8
+  - 14
+  - 14
   What is the output size of layer 5?:
   - 1
-  - 0
-  - 14
   - 8
+  - 14
+  - 14
   What is the output size of layer 6?:
   - 1
-  - 0
-  - 7
   - 8
+  - 7
+  - 7
   What is the output size of layer 7?:
   - 1
-  - 1
-  - 1
   - 256
+  - 1
+  - 1
   What is the output size of layer 8?:
   - 1
-  - 1
-  - 1
   - 256
+  - 1
+  - 1
   What is the output size of layer 9?:
   - 1
-  - 1
-  - 1
   - 10
+  - 1
+  - 1
+'2.5':
+  How many weights are there in layer 1?: 100
+  How many weights are there in layer 2?: 0
+  How many weights are there in layer 3?: 0
+  How many weights are there in layer 4?: 800
+  How many weights are there in layer 5?: 0
+  How many weights are there in layer 6?: 0
+  How many weights are there in layer 7?: 0
+  How many weights are there in layer 8?: 100352
+  How many weights are there in layer 9?: 2560
+'2.6':
+  How many multiplications are there in layer 1?: 78400
+  How many multiplications are there in layer 2?: 0
+  How many multiplications are there in layer 3?: 0
+  How many multiplications are there in layer 4?: 156800
+  How many multiplications are there in layer 5?: 0
+  How many multiplications are there in layer 6?: 0
+  How many multiplications are there in layer 7?: 0
+  How many multiplications are there in layer 8?: 100352
+  How many multiplications are there in layer 9?: 2560
+'2.7':
+  what is the compute intensity of layer 1?: 19.502487562189053
+  what is the compute intensity of layer 2?: 0.0
+  what is the compute intensity of layer 3?: 0.0
+  what is the compute intensity of layer 4?: 49.746192893401016
+  what is the compute intensity of layer 5?: 0.0
+  what is the compute intensity of layer 6?: 0.0
+  what is the compute intensity of layer 7?: 0.0
+  what is the compute intensity of layer 8?: 0.9935841584158416
+  what is the compute intensity of layer 9?: 0.9058740268931351
 '3.1':
   As tensor sizes increase, compute intensity tends to ____.: increase
   Most of the energy goes to ____.: compute
